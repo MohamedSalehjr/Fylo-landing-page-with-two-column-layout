@@ -1,9 +1,5 @@
-body {
+main {
   overflow-x: hidden;
-}
-
-.main {
-  height: 100vh;
 }
 
 .productive {
