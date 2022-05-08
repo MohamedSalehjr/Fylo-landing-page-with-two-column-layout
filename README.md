@@ -10,7 +10,6 @@ This is a solution to the [Fylo landing page with two column layout challenge on
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -28,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/fylo-landing-page-built-with-tailwindcss-rJ2OT5BUq]
 - Live Site URL: [https://mohamedsalehjr.github.io/Fylo-landing-page-with-two-column-layout/]
 
 ## My process
