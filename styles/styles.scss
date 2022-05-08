@@ -1,0 +1,37 @@
+
+$main-color: #F8F8FE;
+$purple: #575988;
+$darker-purple: #07043B;
+
+body {
+    overflow-x: hidden;
+}
+.main{
+    height: 100vh;;
+}
+
+.productive{
+    background-color: $main-color;
+}
+.spacer {
+    height: 30vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+.layer1{
+    background-image: url(../images/bg-curve-desktop.svg);
+    height: 130px;
+}
+
+.sign-up{
+    background-color: $purple;
+}
+.filter-white{
+    filter: invert(100%) sepia(0%) saturate(500%) hue-rotate(245deg) brightness(111%) contrast(103%);
+}
+footer{
+    background-color: $darker-purple;
+    height: 40vh;
+}

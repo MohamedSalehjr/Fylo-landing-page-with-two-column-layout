@@ -1,73 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
+  <main>
+    <nav class="flex items-center justify-between flex-wrap bg-white-500 p-6 pt-10">
+      <div class="flex items-center flex-shrink-0 text-white mr-6 ">
+        <img class="w-18 h-6 sm:w-40 sm:h-12" src="images/logo.svg">
+      </div>
+      <div class="text-md text-black">
+        <a href="#responsive-header" class="block  inline-block hover:text-white mr-4 sm:mr-8">
+          Features
+        </a>
+        <a href="#responsive-header" class="block  inline-block  hover:text-white mr-4 sm:mr-8">
+          Team
+        </a>
+        <a href="#responsive-header" class="block  inline-block   hover:text-white">
+          Sign in
+        </a>
+      </div>
+    </nav>
 
-  Features
-  Team
-  Sign In
+    <section class="px-8 py-8 flex justify-center items-center flex-col-reverse sm:px-8 md:px-16 sm:pt-10 sm:flex-row mb-32">
+      <div class="flex flex-col sm:w-1/2">
+        <h1 class="text-center leading-normal sm:text-left sm:pr-16 text-4xl font-bold mt-20 sm:leading-relaxed"> All your files in one secure location,
+       accessible anywhere.</h1>
+        <p class="mt-8 text-center sm:text-left"> Fylo stores your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.</p>
+        <div class="flex flex-col items-center sm:flex-row mt-6">
+          <input class="py-2 px-2 w-3/4 sm:w-56 border border-black rounded-md" placeholder="Email" />
+          <button class="mt-4 sm:mt-0 sm:ml-4 w-3/4 py-2 px-8 sm:w-40 border-black rounded-md bg-blue-600 hover:bg-blue-400  text-white">Get Started</button>
+        </div>
+      </div>
+      <div class="sm:w-1/2">
+        <img src="images/illustration-1.svg">
+      </div>
 
-  All your files in one secure location, accessible anywhere.
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+    </section>
+    <div class="spacer layer1"></div>
+    <section class="flex flex-col-reverse lg:flex-row justify-center items-center productive lg:px-16 lg:py-12 pt-10">
+      <div class="w-1/2">
+        <h2 class="text-3xl text-center lg:text-left mt-24 md:mt-0 font-bold mb-8">Stay productive, wherever you are</h2>
+        <p class="text-center lg:text-left lg:pr-40"> Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
 
-  Get Started
+          Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!</p>
+        <div class="flex mt-8 mr-auto ml-auto lg:ml-0 border-b-2 pb-2 text-green-700 border-green-600 w-fit cursor-pointer">
+          <p class="mr-4 mt-4 w-fit  ">See how Fylo works</p>
+          <svg class="mt-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+            <defs>
+              <filter id="Oval" x="0" y="0" width="18" height="18" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="1" result="blur"/>
+                <feFlood flood-color="#3da08f" flood-opacity="0.792"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g id="Group_10" data-name="Group 10" transform="translate(3 3)">
+              <g transform="matrix(1, 0, 0, 1, -3, -3)" filter="url(#Oval)">
+                <circle id="Oval-2" data-name="Oval" cx="6" cy="6" r="6" transform="translate(3 3)" fill="#3da08f"/>
+              </g>
+              <g id="arrow-forward" transform="translate(3.333 4)">
+                <path id="Shape" d="M3.249,0,2.886.35l1.452,1.4H0v.5H4.338L2.886,3.65,3.249,4,5.323,2Z" fill="#fff"/>
+              </g>
+            </g>
+          </svg>
+          
+          
+        </div>
 
-  Stay productive, wherever you are
+        <div class="mt-12 w-96 px-10 py-6 mb-24 ml-auto mr-auto ml-0 rounded-md bg-white">
+          <img class="mb-4" src="images/icon-quotes.svg" />
+          <p class="leading-relaxed">Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.</p>
+          <div class="flex items-center mt-6">
+            <img class="w-8 h-8 rounded-full flex" src="images/avatar-testimonial.jpg" />
+            <div class="ml-4">
+              <p>Kyle Burton</p>
+              <p>Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
+      <div class="w-1/2">
+        <img src="images/illustration-2.svg">
+      </div>
+    </section>
+    <section class="sign-up flex flex-col lg:flex-row h-fit lg:px-16 py-8 lg:py-24 justify-center items-center">
 
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
+      <div class="w-1/2">
+        <h3 class="text-2xl text-white">Get early access today</h3>
+        <p class="mt-4 lg:pr-32 text-white font-light">It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.</p>
+      </div>
 
-  See how Fylo works
+      <div class="flex flex-col  items-center lg:items-left w-1/2">
+        <input class="py-4 px-2 w-full lg:w-90 border border-black rounded-md" type="text" placeholder="email@example.com"/>
+        <button class="py-4 px-10 w-full lg:w-60 mt-4 border-black text-bold rounded-md bg-blue-600 hover:bg-blue-400 text-white" type="button">Get Started For Free</button>
+      </div>
+    </section>
+  </main>
 
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
+  <footer class="flex text-white px-12 items-center ">
 
-  Kyle Burton
-  Founder & CEO, Huddle
+    <div class="flex  flex-col w-1/3">
 
-  Get early access today
+      <img class="filter-white w-28 h-12" src="images/logo.svg" />
+      <div class="flex items-center mt-6">
+        <img class="mr-4" src="images/icon-phone.svg" alt="phone icon" />
+        <p>+1-543-123-4567</p>
+      </div>
+      <div class="flex items-center">
+        <img class="mr-4" src="images/icon-email.svg" alt="email icon"/>
+        <p>example@fylo.com</p>
+      </div>
+    </div>
 
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
+    <div class="flex flex-col w-1/3">
+      <p class="cursor-pointer hover:text-blue-600">About Us</p>
+      <p class="cursor-pointer hover:text-blue-600">Jobs</p>
+      <p class="cursor-pointer hover:text-blue-600">Press</p>
+      <p class="cursor-pointer hover:text-blue-600">Blog</p>
+    </div>
 
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="flex flex-col w-1/3" >
+      <p class="cursor-pointer hover:text-blue-600">Contact Us</p>
+      <p class="cursor-pointer hover:text-blue-600">Terms</p>
+      <p class="cursor-pointer hover:text-blue-600">Privacy</p>
+    </div>
   </footer>
 </body>
+
 </html>

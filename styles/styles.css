@@ -1,0 +1,39 @@
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  height: 100vh;
+}
+
+.productive {
+  background-color: #F8F8FE;
+}
+
+.spacer {
+  height: 30vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url(../images/bg-curve-desktop.svg);
+  height: 130px;
+}
+
+.sign-up {
+  background-color: #575988;
+}
+
+.filter-white {
+  -webkit-filter: invert(100%) sepia(0%) saturate(500%) hue-rotate(245deg) brightness(111%) contrast(103%);
+          filter: invert(100%) sepia(0%) saturate(500%) hue-rotate(245deg) brightness(111%) contrast(103%);
+}
+
+footer {
+  background-color: #07043B;
+  height: 40vh;
+}
+/*# sourceMappingURL=styles.css.map */
